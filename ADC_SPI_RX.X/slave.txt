@@ -1,0 +1,44 @@
+#include "config.h"
+#include <xc.h>
+#include <pic16f877a.h>
+#define _XTAL_FREQ 20000000
+#include "SPI_Com.h"
+#include "Lcd_8bit.h"
+
+void Received(unsigned char *ptr, int length);
+
+void main()
+{
+    unsigned char Rx_data[5];   // 4 chars + null terminator
+    Slave_Init();
+    lcd_init();
+    lcd_cmd(0x80);      
+    lcd_str("SPI_Received:");
+
+    while(1)
+    {
+        Received(Rx_data, 4);
+        Rx_data[4] = '\0';      // null terminate for safety
+
+        lcd_cmd(0xC0);
+        lcd_data(Rx_data[0]);  
+        lcd_data(Rx_data[1]);
+        lcd_data(Rx_data[2]);
+        lcd_data(Rx_data[3]);
+        // or simply: lcd_str(Rx_data);
+    }
+}
+
+void Received(unsigned char *ptr, int length)
+{
+    int i;
+    char temp = SPI_Rx();
+    if(temp == ':')   // start marker
+    {
+        for(i = 0; i < length; i++)
+        {
+            *(ptr+i) = SPI_Rx();
+        }
+    }
+}
+

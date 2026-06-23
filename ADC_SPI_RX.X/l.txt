@@ -1,0 +1,40 @@
+void SPI_Slave_Init(void)
+{
+    // Set TRIS for SPI pins
+    TRISC3 = 1;   // SCK as input
+    TRISC4 = 1;   // SDI as input
+    TRISC5 = 0;   // SDO as output
+    TRISA5 = 1;   // SS as input
+
+    // Configure SPI in Slave mode, SS enabled
+    SSPSTAT = 0x40;   // Data sampled at end, transmit on rising edge
+    SSPCON  = 0x24;   // SPI Slave mode, SS enabled, CKP=0
+}
+//////////////////////////////////////
+================ SPI MASTER (LPC2148) =================
+P0.4 (SCK0)   --->  PIC16F877A SCK (RC3)
+P0.5 (MOSI0)  --->  PIC16F877A SDI (RC4)
+P0.6 (MISO0)  <---  PIC16F877A SDO (RC5)
+P0.7 (CS1)   --->  PIC16F877A SS (RA5)   // Chip select line
+
+ADC Input     --->  LPC ADC pin (e.g. P0.28)
+LCD (optional)-->  LPC GPIO pins (local display)
+GND           --->  Common ground
+Vcc           --->  Common supply
+
+================ SPI SLAVE (PIC16F877A) ================
+RC3 (SCK)     <---  LPC P0.4 (SCK0)
+RC4 (SDI)     <---  LPC P0.5 (MOSI0)
+RC5 (SDO)     --->  LPC P0.6 (MISO0)
+RA5 (SS)      <---  LPC P0.11 (CS1)
+
+LCD RS,RW,EN,D4-D7 ---> PIC GPIO pins (for display)
+GND           --->  Common ground
+Vcc           --->  Common supply
+
+================ Notes =================
+- LPC drives SCK, MOSI, and CS.
+- PIC drives MISO only when SS (RA5) is low.
+- Both must share the same ground and supply voltage.
+- LPC reads ADC and sends data over SPI.
+- PIC receives SPI data and displays it on its LCD.
