@@ -1,0 +1,118 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: rfyrurth rtyhrfyhjrfq, HFJFHFF, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARM.DLL V5.20
+Dialog DLL:      DARMP.DLL V1.52.0.0
+Target DLL:      UL2ARM.DLL V1.74.8.0
+Dialog DLL:      TARMP.DLL V1.52.0.0
+ 
+<h2>Project:</h2>
+D:\Envision\New folder\LPC\Programs\Arm_Spi\Arm_Spi_Adc\Master\SPI_Master_Adc.uvproj
+Project File Date:  06/05/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling Arm_PLL.c...
+Arm_PLL.h(2): warning:  #1-D: last line of file ends without a newline
+  void PLL_SET();
+Arm_PLL.h(2): warning:  #1295-D: Deprecated declaration PLL_SET - give arg types
+  void PLL_SET();
+Arm_PLL.c(14): warning:  #1-D: last line of file ends without a newline
+   }
+Arm_PLL.c: 3 warnings, 0 errors
+compiling SPI_Master_Adc.c...
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(163): warning:  #47-D: incompatible redefinition of macro "U0IER" (declared at line 188 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U0IER          (*((volatile unsigned char *) 0xE000C004))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(164): warning:  #47-D: incompatible redefinition of macro "U0IIR" (declared at line 189 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U0IIR          (*((volatile unsigned char *) 0xE000C008))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(169): warning:  #47-D: incompatible redefinition of macro "U0FDR" (declared at line 199 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U0FDR          (*((volatile unsigned char *) 0xE000C028))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(176): warning:  #47-D: incompatible redefinition of macro "U1IER" (declared at line 205 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U1IER          (*((volatile unsigned char *) 0xE0010004))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(177): warning:  #47-D: incompatible redefinition of macro "U1IIR" (declared at line 206 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U1IIR          (*((volatile unsigned char *) 0xE0010008))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(184): warning:  #47-D: incompatible redefinition of macro "U1FDR" (declared at line 216 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U1FDR          (*((volatile unsigned char *) 0xE0010028))
+Arm_Lcd.h(2): warning:  #1295-D: Deprecated declaration Arm_Lcd_Init - give arg types
+  void Arm_Lcd_Init();
+Arm_Lcd.h(9): warning:  #1-D: last line of file ends without a newline
+  #define En 19
+Arm_PLL.h(2): warning:  #1-D: last line of file ends without a newline
+  void PLL_SET();
+Arm_PLL.h(2): warning:  #1295-D: Deprecated declaration PLL_SET - give arg types
+  void PLL_SET();
+Arm_SPI.h(9): warning:  #1-D: last line of file ends without a newline
+  #define SS_SELECT 7
+Delay.h(1): warning:  #1-D: last line of file ends without a newline
+  void delay(unsigned int) ;
+SPI_Master_Adc.c(33): warning:  #1-D: last line of file ends without a newline
+  }
+SPI_Master_Adc.c: 13 warnings, 0 errors
+compiling Delay.c...
+Delay.c(6): warning:  #1-D: last line of file ends without a newline
+  }
+Delay.c: 1 warning, 0 errors
+compiling Arm_Adc.c...
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(163): warning:  #47-D: incompatible redefinition of macro "U0IER" (declared at line 188 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U0IER          (*((volatile unsigned char *) 0xE000C004))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(164): warning:  #47-D: incompatible redefinition of macro "U0IIR" (declared at line 189 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U0IIR          (*((volatile unsigned char *) 0xE000C008))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(169): warning:  #47-D: incompatible redefinition of macro "U0FDR" (declared at line 199 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U0FDR          (*((volatile unsigned char *) 0xE000C028))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(176): warning:  #47-D: incompatible redefinition of macro "U1IER" (declared at line 205 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U1IER          (*((volatile unsigned char *) 0xE0010004))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(177): warning:  #47-D: incompatible redefinition of macro "U1IIR" (declared at line 206 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U1IIR          (*((volatile unsigned char *) 0xE0010008))
+C:\Keil_v5\ARM\INC\Philips\lpc21xx.h(184): warning:  #47-D: incompatible redefinition of macro "U1FDR" (declared at line 216 of "C:\Keil_v5\ARM\INC\Philips\lpc214x.h")
+  #define U1FDR          (*((volatile unsigned char *) 0xE0010028))
+Arm_Lcd.h(2): warning:  #1295-D: Deprecated declaration Arm_Lcd_Init - give arg types
+  void Arm_Lcd_Init();
+Arm_Lcd.h(9): warning:  #1-D: last line of file ends without a newline
+  #define En 19
+Arm_Adc.c(14): warning:  #61-D: integer operation result is out of range
+  	 while(!(
+D0DR2&(1<<31)));//Monitor
+Arm_Adc.c(14): warning:  #68-D: integer conversion resulted in a change of sign
+  	 while(!(
+D0DR2&(1<<31)));//Monitor
+Arm_Adc.c(25): warning:  #1-D: last line of file ends without a newline
+  }
+Arm_Adc.c: 11 warnings, 0 errors
+compiling Arm_SPI.c...
+Arm_SPI.h(9): warning:  #1-D: last line of file ends without a newline
+  #define SS_SELECT 7
+Arm_SPI.c(29): warning:  #1-D: last line of file ends without a newline
+  }
+Arm_SPI.c: 2 warnings, 0 errors
+compiling Arm_Lcd.c...
+Arm_lcd.h(2): warning:  #1295-D: Deprecated declaration Arm_Lcd_Init - give arg types
+  void Arm_Lcd_Init();
+Arm_lcd.h(9): warning:  #1-D: last line of file ends without a newline
+  #define En 19
+Arm_Lcd.c(60): warning:  #1-D: last line of file ends without a newline
+  }
+Arm_Lcd.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=2468 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\Objects\SPI_Master_Adc.axf" - 0 Error(s), 33 Warning(s).
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

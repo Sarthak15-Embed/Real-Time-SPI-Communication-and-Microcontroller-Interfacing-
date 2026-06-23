@@ -1,0 +1,56 @@
+void Master_Init(void)
+{
+    // Configure pins: P0.4=SCK0, P0.5=MOSI0, P0.6=MISO0, P0.7=SSEL0
+    PINSEL0 |= 0x00005500;          // Assign pins to SPI0
+
+    // SPI Control Register:
+    // (1<<5) ? MSTR = 1 (Master mode)
+    // (1<<2) ? BitEnable = 1 (variable length)
+    // (12<<8) ? 12-bit transfer length
+    S0SPCR = (1<<5) | (1<<2) | (12<<8);
+
+    // Clock divider (must be even = 8)
+    S0SPCCR = 8;
+}
+///////////////////////////////////////////////
+void Slave_Init(void)
+{
+    PINSEL0 |= 0x00005500;          // Assign pins to SPI0
+
+    // SPI Control Register:
+    // MSTR = 0 (Slave mode)
+    // BitEnable = 1
+    // 12-bit transfer length
+    S0SPCR = (1<<2) | (12<<8);
+
+    // Clock divider not required in Slave
+}
+////////////////////////////////////////////////
+void Master_Init(void)
+{
+    // Configure pins: P0.4=SCK0, P0.5=MOSI0, P0.6=MISO0, P0.7=SSEL0
+    PINSEL0 |= 0x00005500;          // Assign pins to SPI0
+
+    // SPI Control Register:
+    // (1<<5) → MSTR = 1 (Master mode)
+    // (1<<2) → BitEnable = 1 (variable length)
+    // (10<<8) → 10-bit transfer length
+    S0SPCR = (1<<5) | (1<<2) | (10<<8);
+
+    // Clock divider (must be even ≥ 8)
+    S0SPCCR = 8;
+}
+////////////////////////////////////////////////
+void Slave_Init(void)
+{
+    PINSEL0 |= 0x00005500;          // Assign pins to SPI0
+
+    // SPI Control Register:
+    // MSTR = 0 (Slave mode)
+    // BitEnable = 1
+    // 10-bit transfer length
+    S0SPCR = (1<<2) | (10<<8);
+
+    // Clock divider not required in Slave
+}
+

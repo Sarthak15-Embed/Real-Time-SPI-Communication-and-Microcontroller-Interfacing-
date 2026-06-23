@@ -1,0 +1,31 @@
+Dependencies for Project 'SPI_Master_Adc', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x559CFDE8)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 525"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (.\Arm_Adc.c)(0x6A1D6A82)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="525"-o .\objects\arm_adc.o --omf_browse .\objects\arm_adc.crf --depend .\objects\arm_adc.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (Arm_Adc.h)(0x6A167E7E)
+I (Arm_Lcd.h)(0x6A13FB3E)
+I (C:\Keil_v5\ARM\INC\Philips\lpc21xx.h)(0x559CFE30)
+F (.\Arm_Adc.h)(0x6A167E7E)()
+F (.\Arm_Lcd.c)(0x6A13FB3E)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="525"-o .\objects\arm_lcd.o --omf_browse .\objects\arm_lcd.crf --depend .\objects\arm_lcd.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc21xx.h)(0x559CFE30)
+I (Arm_lcd.h)(0x6A13FB3E)
+F (.\Arm_Lcd.h)(0x6A13FB3E)()
+F (.\Arm_PLL.c)(0x6A14218D)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="525"-o .\objects\arm_pll.o --omf_browse .\objects\arm_pll.crf --depend .\objects\arm_pll.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (Arm_PLL.h)(0x6A14218D)
+F (.\Arm_PLL.h)(0x6A14218D)()
+F (.\Arm_SPI.c)(0x6A23D2F6)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="525"-o .\objects\arm_spi.o --omf_browse .\objects\arm_spi.crf --depend .\objects\arm_spi.d)
+I (Arm_SPI.h)(0x6A214CEC)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+F (.\Arm_SPI.h)(0x6A214CEC)()
+F (.\Delay.c)(0x6A13FB3E)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="525"-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+F (.\Delay.h)(0x6A13FB3E)()
+F (.\SPI_Master_Adc.c)(0x6A2299CA)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="525"-o .\objects\spi_master_adc.o --omf_browse .\objects\spi_master_adc.crf --depend .\objects\spi_master_adc.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (Arm_Adc.h)(0x6A167E7E)
+I (Arm_Lcd.h)(0x6A13FB3E)
+I (C:\Keil_v5\ARM\INC\Philips\lpc21xx.h)(0x559CFE30)
+I (Arm_PLL.h)(0x6A14218D)
+I (Arm_SPI.h)(0x6A214CEC)
+I (Delay.h)(0x6A13FB3E)
+F (.\master.txt)(0x6A22AEF0)()

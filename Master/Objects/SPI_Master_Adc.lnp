@@ -1,0 +1,12 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\arm_adc.o"
+".\objects\arm_lcd.o"
+".\objects\arm_pll.o"
+".\objects\arm_spi.o"
+".\objects\delay.o"
+".\objects\spi_master_adc.o"
+--strict --scatter ".\Objects\SPI_Master_Adc.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SPI_Master_Adc.map" -o .\Objects\SPI_Master_Adc.axf
