@@ -5,6 +5,10 @@ Makefile linguist-generated
 nbproject/** linguist-generated
 build/** linguist-generated
 dist/** linguist-generated
+*.html linguist-generated
+*.htm linguist-generated
+*.asm linguist-generated
+*.a51 linguist-generated
 *.hex linguist-generated
 *.elf linguist-generated
 *.map linguist-generated
