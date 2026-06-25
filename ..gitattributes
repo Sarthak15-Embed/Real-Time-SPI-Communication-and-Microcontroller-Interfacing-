@@ -1,0 +1,12 @@
+*.i linguist-generated
+*.ii linguist-generated
+*.mk linguist-generated
+Makefile linguist-generated
+nbproject/** linguist-generated
+build/** linguist-generated
+dist/** linguist-generated
+*.hex linguist-generated
+*.elf linguist-generated
+*.map linguist-generated
+*.o linguist-generated
+*.d linguist-generated
